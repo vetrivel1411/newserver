@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 RUN apt-get update && apt-get install -y python3 python3-pip
-WORKDIR app/
+WORKDIR /app
 COPY . .
 EXPOSE 8000
-CMD ["python3","ser"]
+CMD ["python3","server.py"]
